@@ -1,13 +1,4 @@
 
-""" على Flask يعتمد
-المسار (Route): هو الرابط الذي يكتبه المستخدم (مثل www.site.com/about).
-الدالة (Function): هي الكود الذي يعمل عندما يفتح المستخدم هذا الرابط.
-الطلب (Request): المعلومات القادمة من المستخدم (مثل بيانات نموذج التسجيل).
-الرد (Response): ما يراه المستخدم في المتصفح (غالباً صفحة HTML).
-"""
-
-
-
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
@@ -37,4 +28,5 @@ def greet():
 
 if __name__ == '__main__':
     # debug=True: ميزة رائعة تجعل الموقع يعيد تشغيل نفسه تلقائياً عندما تعدل الكود
+
     app.run(debug=True)
