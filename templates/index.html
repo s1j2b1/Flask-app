@@ -1,0 +1,34 @@
+
+<!-- <form> هذا هو "نموذج الطلب" الذي يملؤه المستخدم. السر كله يكمن في وسم -->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة الإدخال</title>
+</head>
+<body>
+    <h1>مرحباً بك! أخبرنا عن نفسك</h1>
+
+    <!-- action="/greet": خذ البيانات واذهب إلى هذا المسار submit عند ضغط زر 
+     اذا لم تكن موجودة سيعيد إرسال البيانات إلى نفس الصفحة التي هو فيها حالياً-->
+    <!-- method="POST":   "طريقة الشحن: "ضع البيانات داخل صندوق مغلق -->
+    <form action="/greet" method="POST">
+        
+        <label>الاسم:</label>  <!-- اسم بجانب الصندوق -->
+        <!-- placeholder  الصندوق -->
+        <input type="text" name="namel" placeholder="اكتب اسمك هنا" required >
+        <br><br>
+
+        <label>الهواية:</label>
+        <!-- "hobby" اسم الصندوق -->
+        <!-- autocomplete="off": تمنع المتصفح من عرض اقتراحات مما كتبت سابقا -->
+        <input type="text" name="hobby" placeholder="ماذا تحب أن تفعل؟" autocomplete="off">
+        <br><br>
+
+        <!-- زر الضغط -->
+         <!-- type="submit: inputأمر بجمع القيم الموجودة في الـ -->
+        <button type="submit">إرسال البيانات 🚀</button>
+    </form>
+</body>
+</html>
